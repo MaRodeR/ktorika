@@ -1,9 +1,11 @@
-package org.bp.labs
+package org.ktorika
 
 import ma.glasnost.orika.CustomConverter
+import ma.glasnost.orika.CustomMapper
 import ma.glasnost.orika.MapperFactory
 import ma.glasnost.orika.MappingContext
 import ma.glasnost.orika.impl.ConfigurableMapper
+import ma.glasnost.orika.metadata.Property
 import ma.glasnost.orika.metadata.Type
 import org.junit.jupiter.api.Test
 import java.time.LocalDate

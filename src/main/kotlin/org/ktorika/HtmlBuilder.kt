@@ -1,4 +1,4 @@
-package org.bp.labs.dtomapper
+package org.ktorika
 
 @DslMarker
 annotation class HtmlTagDslMarker
@@ -16,14 +16,17 @@ open class Tag {
 
 class Html : Tag() {
 
-    fun head(init: Head.() -> Unit): Head = element(Head(), init)
+    fun head(init: Head.() -> Unit): Head = element(
+        Head(), init)
 
-    fun body(init: Body.() -> Unit): Body = element(Body(), init)
+    fun body(init: Body.() -> Unit): Body = element(
+        Body(), init)
 }
 
 class Head : Tag() {
 
-    fun title(init: TagWithText.() -> Unit): TagWithText = element(TagWithText(), init)
+    fun title(init: TagWithText.() -> Unit): TagWithText = element(
+        TagWithText(), init)
 }
 
 class Body : Tag()
